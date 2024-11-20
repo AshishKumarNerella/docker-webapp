@@ -3,12 +3,12 @@ version : "3"
 services:
   database:
     container_name: devopsdb
-    build: "/var/lib/jenkins/workspace/ThreeTireApplicationDeployementUsingDockerCompose-Jenkins/Devops-db"
+    build: "/var/lib/jenkins/workspace/ThreeTireApplicationDeployementUsingDockerCompose-Jenkins/Docker-db"
     ports:
       - "3306:3306"
       
   application:
     container_name: appcontainer
-    build: "/var/lib/jenkins/workspace/ThreeTireApplicationDeployementUsingDockerCompose-Jenkins/Devops-app"
+    build: "/var/lib/jenkins/workspace/ThreeTireApplicationDeployementUsingDockerCompose-Jenkins/Docker-app"
     ports:
       - "1999:8080"
